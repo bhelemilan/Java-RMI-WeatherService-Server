@@ -1,0 +1,6 @@
+// This file controls privileges for networking and I/O operations
+grant {
+	permission java.net.SocketPermission "forecast.weather.gov:443", "connect,resolve,accept";
+	permission java.net.SocketPermission "localhost:0-", "connect,resolve,accept";
+    permission java.io.FilePermission "imagenames.properties", "read";
+};
